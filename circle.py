@@ -3,6 +3,25 @@ import math
 
 
 class Circle:
+    """A class representing a circle.
+
+        Attributes:
+        radius (float): The radius of the circle.
+
+        Example:
+        Normal case:
+        >>> circle1 = Circle(3)
+        >>> circle2 = Circle(4)
+        >>> combined_circle = circle1.add_area(circle2)
+        >>> combined_circle.get_radius()
+        5.0
+
+        >>> Circle(-2)
+        Traceback (most recent call last):
+        ...
+        ValueError: radius must be non-negative
+
+        """
 
     def __init__(self, radius):
         """Initialize a circle with given radius.
