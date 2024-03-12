@@ -22,7 +22,6 @@ class Circle:
         ...
         ValueError: radius must be non-negative
 
-
         """
 
     def __init__(self, radius):
