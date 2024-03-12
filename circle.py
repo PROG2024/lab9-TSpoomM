@@ -3,7 +3,8 @@ import math
 
 
 class Circle:
-    """A class representing a circle.
+    """
+    A class representing a circle.
 
         Attributes:
         radius (float): The radius of the circle.
@@ -20,6 +21,7 @@ class Circle:
         Traceback (most recent call last):
         ...
         ValueError: radius must be non-negative
+
         """
 
     def __init__(self, radius):
@@ -39,6 +41,14 @@ class Circle:
         area of this circle and another circle.
         Since area is pi*r**2, the radii of the 3 circles
         should form a Pythagorean triple (r1^2 + r2^2 = r3^2)
+
+        Example:
+        >>> circle1 = Circle(3)
+        >>> circle2 = Circle(4)
+        >>> combined_circle = circle1.add_area(circle2)
+        >>> combined_circle.get_radius()
+        5.0
+
         """
         r1 = self.get_radius()
         r2 = circle.get_radius()
