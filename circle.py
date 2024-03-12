@@ -24,7 +24,8 @@ class Circle:
         """
 
     def __init__(self, radius):
-        """Initialize a circle with given radius.
+        """
+        Initialize a circle with given radius.
         
         :param radius: radius of the circle, may be zero.
         :raises ValueError: if radius is negative.
@@ -34,7 +35,8 @@ class Circle:
         self.radius = radius
 
     def add_area(self, circle: Circle) -> Circle:
-        """Return a new circle whose area equals the combined
+        """
+        Return a new circle whose area equals the combined
         area of this circle and another circle.
         Since area is pi*r**2, the radii of the 3 circles
         should form a Pythagorean triple (r1^2 + r2^2 = r3^2)
